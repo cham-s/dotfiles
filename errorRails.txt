@@ -1,0 +1,8 @@
+- Forgot to run heroku rake db:migrate
+-  If I have bootstrap, to delete an  entry in production, re order the require list in application.js so it appears like this
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require bootstrap-sprockets
+//= require_tree .
+
