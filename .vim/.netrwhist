@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/gecko/Documents/Dev/vim/pracvim'
+let g:netrw_dirhist_2='/Users/gecko/.oh-my-zsh'
+let g:netrw_dirhist_3='/Users/gecko/Documents/Dev/rails/blog/app/controllers'
+let g:netrw_dirhist_4='/Users/gecko/Documents/Dev/rails/sample_app/app/views/layouts'
+let g:netrw_dirhist_5='/Users/gecko/Documents/Dev/rails/sample_app/test/controllers'
+let g:netrw_dirhist_6='/Users/gecko/Documents/Dev/rails/sample_app/app/helpers'
+let g:netrw_dirhist_7='/Users/gecko/Documents/Dev/rails/sample_app/test/helpers'

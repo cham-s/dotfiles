@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gianu"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/gecko/.rvm/bin:/Users/gecko/.rvm/bin:/Users/gecko/.rvm/bin"
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/gecko/.rvm/bin:/Users/gecko/.rvm/bin:/Users/gecko/.rvm/bin:/Users/gecko/Documents/jruby/jruby-9.0.0.0.pre1/bin:/opt/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -118,7 +118,6 @@ export COLOR_YELLOW='\e[1;33m'
 export COLOR_GRAY='\e[0;30m'
 export COLOR_LIGHT_GRAY='\e[0;37m'
 
-
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
@@ -161,7 +160,6 @@ alias notebook='ipython notebook'
 # ruby
 alias irbs='irb --simple-prompt'
 
-
 #ruby on rails
 #console
 alias rc='rails c'
@@ -177,13 +175,9 @@ alias rgmig='rails g migration'
 alias hk='heroku'
 alias hkop='heroku open'
 alias hkrs='heroku restart' 
+alias jsono='python -m json.tool'
 
-# rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export RBENV_ROOT=/usr/local/var/rbenv
-
-
-
-
-
   
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
