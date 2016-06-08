@@ -6,9 +6,12 @@ filetype off
 set backupdir=~/.vim/bkp
 set ts=4
 set noet
+set colorcolumn=81
 :%retab!
 set directory=$HOME/.vim/swp/
 colorscheme materialbox
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
@@ -30,5 +33,5 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-call vundle#end() 
+call vundle#end()
 filetype plugin indent on
